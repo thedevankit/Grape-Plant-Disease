@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<div style=" margin:20px; color:green; font-size:20px; text-align: center;">
+
+		You had uploaded a file.
+
+		The result are as follow.
+	</div>
+<center>
+	<table style="margin:5px" border = 1>
+            <tr>
+            	   {% for key in name %}
+              			 <th style="color:red; font-size:18px; text-align: center;"> {{ key }} </th>
+                  {% endfor %}
+            </tr>
+            <tr>
+            	 {% for score in scores %}
+              			 <td style="color:green; font-size:18px; text-align: center;"> {{ score }} </td>
+                  {% endfor %}
+            </tr>
+      </table>
+</center>
+      <div style=" color:green; font-size:20px; text-align: center;">
+      		The Result which we find is a approximate values. <br>
+
+          <br><p style="color:red; font-size:18px; text-align: center;">To conform Please Submit Your Report Data.</p>
+        <form action = "http://localhost:5000/fresult" method = "POST"> 
+            <div class="container" id = "mean">
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Area M:<input class="form-control" type="text" name="area_m"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Radius:<input class="form-control" type="text" name="radius_m"></label>             
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Perimeter:<input class="form-control" type="text" name="perimeter_m"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Compactness:<input class="form-control" type="text" name="compactness_m"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Concave points:<input class="form-control" type="text" name="concave_points_m"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Concavity:<input class="form-control" type="text" name="concavity_m"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Fractional Dimensional:<input class="form-control" type="text" name="fractional_dimension_m"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Smoothness:<input class="form-control" type="text" name="smoothness_m"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Symmetry:<input class="form-control" type="text" name="symmetry_m"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Texture:<input class="form-control" type="text" name="texture_m"></label>
+                </div>
+              </div>         
+            </div>
+
+            <div class="container" id = "se">
+
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Area:<input class="form-control" type="text" name="area_se"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Radius:<input class="form-control" type="text" name="radius_se"></label>              
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Perimeter:<input class="form-control" type="text" name="perimeter_se"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Compactness:<input class="form-control" type="text" name="compactness_se"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Concave points:<input class="form-control" type="text" name="concave_points_se"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Concavity:<input class="form-control" type="text" name="concavity_se"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Fractional Dimensional:<input class="form-control" type="text" name="fractional_dimension_se"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Smoothness:<input class="form-control" type="text" name="smoothness_se"></label><br><br>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Symmetry:<input class="form-control" type="text" name="symmetry_se"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Texture:<input class="form-control" type="text" name="texture_se"></label>
+                </div>
+            </div>
+            <div class="container" id = "worst">
+
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Area:<input class="form-control" type="text" name="area_worst"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Radius:<input class="form-control" type="text" name="radius_worst"></label>              
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Perimeter:<input class="form-control" type="text" name="perimeter_worst"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Compactness:<input class="form-control" type="text" name="compactness_worst"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Concave points:<input class="form-control" type="text" name="concave_points_worst"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Concavity:<input class="form-control" type="text" name="concavity_worst"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Fractional Dimensional:<input class="form-control" type="text" name="fractional_dimension_worst"></label>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Smoothness:<input class="form-control" type="text" name="smoothness_worst"></label><br><br>
+                </div>
+                <div class="col-md-4 form-group">
+                  <label>Symmetry:<input class="form-control" type="text" name="symmetry_worst"></label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  <label>Texture:<input class="form-control" type="text" name="texture_worst"></label>
+                </div>
+                
+                <div class="col-md-8 form-group">
+                  <input type="submit" class="lo lo-default form-control" value="Submit" name="submit" id = "submit">
+                </div>
+              </div>
+                
+              
+            </div>
+      </form>
+
+      </div>
+      	
+      
+</body>
+</html>
