@@ -5,7 +5,7 @@ Grapes Disease : It is a web application which can find the type of diseases fro
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install tensorflow.
+Use the package manager [pip](https://pip.pypa.io/en/stable/).
 
 
 ```bash
