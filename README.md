@@ -27,7 +27,7 @@ python app-final.py
 
 ## Demo and Screenshots 
 
-### TO check demo please visit youtube.
+### To check demo please visit youtube.
 https://youtu.be/UVxZw-MVGJ4
 
 ###
