@@ -9,7 +9,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/).
 
 
 ```bash
-python -m pip install numpy scipy matplotlib ipython jupyter pandas sympy nose
+python -m pip install numpy scipy matplotlib ipython jupyter pandas sympy nose flask
 ```
 
 To install and know more about tensorflow visit [tensorflow](https://www.tensorflow.org/).
@@ -27,7 +27,11 @@ python app-final.py
 
 ## Demo and Screenshots 
 
+### TO check demo please visit youtube.
 https://youtu.be/UVxZw-MVGJ4
+
+###
+![project screenshots](/screenshots/1.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
